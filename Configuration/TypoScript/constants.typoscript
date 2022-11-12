@@ -9,9 +9,9 @@
 ##############################
 styles {
     templates {
-        layoutRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Templates/ContentElements/
+        layoutRootPath = EXT:fluid_styled_content/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:fluid_styled_content/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:fluid_styled_content/Resources/Private/Templates/ContentElements/
     }
 }
 
@@ -21,9 +21,9 @@ styles {
 ############
 page {
      fluidtemplate {
-        layoutRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Partials/Page/
-        templateRootPath = EXT:crawler_devbox_sitepackage/Resources/Private/Templates/Page/
+        layoutRootPath = EXT:fluid_styled_content/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:fluid_styled_content/Resources/Private/Partials/Page/
+        templateRootPath = EXT:fluid_styled_content/Resources/Private/Templates/Page/
     }
     meta {
         description =

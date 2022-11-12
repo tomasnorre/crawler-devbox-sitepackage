@@ -1,21 +1,38 @@
-<ul>
-    <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                {mainnavigationItem.title}
-            </a>
-            <f:if condition="{mainnavigationItem.children}">
-                <ul>
-                    <f:for each="{mainnavigationItem.children}" as="child">
-                        <li class="{f:if(condition: child.active, then:'active')}">
-                            <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                {child.title}
-                            </a>
-                        </li>
-                    </f:for>
-                </ul>
-            </f:if>
-        </li>
-    </f:for>
-</ul>
-<f:render section="Main" />
+<div id="header">
+    <!-- Logo -->
+    <h1><a href="/" id="logo">TYPO3 Crawler Devbox</em></a></h1>
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <li class="{f:if(condition: mainnavigationItem.active, then:'current')}">
+                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}"
+                       title="{mainnavigationItem.title}">
+                        {mainnavigationItem.title}
+                    </a>
+                    <f:if condition="{mainnavigationItem.children}">
+                        <ul>
+                            <f:for each="{mainnavigationItem.children}" as="child">
+                                <li class="{f:if(condition: child.active, then:'current')}">
+                                    <a href="{child.link}" target="{child.target}" title="{child.title}">
+                                        {child.title}
+                                    </a>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </nav>
+</div>
+<!-- Header -->
+
+<section class="wrapper style1">
+    <div class="container">
+        <div id="content">
+            <!-- Content -->
+            <f:render section="Main"/>
+        </div>
+    </div>
+</section>
