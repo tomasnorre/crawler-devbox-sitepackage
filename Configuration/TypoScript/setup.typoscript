@@ -1,14 +1,13 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 
 
 ################
 #### HELPER ####
 ################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:crawler_devbox_sitepackage/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-
+@import 'EXT:crawler_devbox_sitepackage/Configuration/TypoScript/Helper/DynamicContent.typoscript'
 
 ##############
 #### PAGE ####
